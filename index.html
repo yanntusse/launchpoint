@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LaunchPoint Projects — Campaign Operations & Delivery Systems</title>
+<title>LaunchPoint Projects — Campaign Operations, Project Delivery & SEO Strategy</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
@@ -37,121 +37,125 @@ body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);lin
 
 /* NAV */
 nav{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:0.5px solid var(--border);padding:0 48px}
-.nav-inner{max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:56px}
+.nav-inner{max-width:1400px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;height:56px}
 .nav-name{font-family:'Playfair Display',serif;font-size:16px;color:var(--ink);text-decoration:none;font-weight:600}
 .nav-links{display:flex;gap:32px}
 .nav-links a{font-size:12px;letter-spacing:0.8px;text-transform:uppercase;color:var(--ink3);text-decoration:none;transition:color .2s}
 .nav-links a:hover{color:var(--ink)}
 
 /* HERO */
-.hero{max-width:1200px;margin:0 auto;padding:80px 48px 88px}
+.hero{max-width:1400px;margin:0 auto;padding:100px 48px 120px}
 .hero-tag{display:inline-block;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);background:var(--accent-light);padding:6px 14px;border-radius:6px;margin-bottom:28px}
-.hero h1{font-family:'Playfair Display',serif;font-size:56px;line-height:1.1;letter-spacing:-1.5px;max-width:700px;margin-bottom:28px}
+.hero h1{font-family:'Playfair Display',serif;font-size:64px;line-height:1.05;letter-spacing:-2px;max-width:850px;margin-bottom:32px}
 .hero h1 span{color:var(--ink2);font-style:italic}
-.hero-desc{font-size:17px;color:var(--ink2);max-width:580px;line-height:1.8;margin-bottom:44px}
-.hero-stats{display:flex;gap:48px;padding-top:40px;border-top:0.5px solid var(--border);flex-wrap:wrap}
+.hero-desc{font-size:18px;color:var(--ink2);max-width:680px;line-height:1.8;margin-bottom:52px}
+.hero-cta{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.cta-btn{display:inline-block;background:var(--ink);color:var(--paper);padding:16px 32px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;transition:all .2s;border:none;cursor:pointer;font-family:'Inter',sans-serif}
+.cta-btn:hover{opacity:.85;transform:translateY(-2px)}
+.cta-link{font-size:14px;color:var(--accent);text-decoration:none;font-weight:600;transition:color .2s}
+.cta-link:hover{color:var(--ink)}
+.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:32px;padding-top:60px;border-top:0.5px solid var(--border)}
 .stat-item{}
-.stat-num{font-family:'Playfair Display',serif;font-size:32px;color:var(--ink);margin-bottom:4px}
-.stat-label{font-size:12px;color:var(--ink3);letter-spacing:0.3px}
+.stat-num{font-family:'Playfair Display',serif;font-size:36px;color:var(--ink);margin-bottom:6px;font-weight:600}
+.stat-label{font-size:12px;color:var(--ink3);letter-spacing:0.3px;text-transform:uppercase}
 
 /* SECTION SHARED */
-.section{padding:80px 48px}
-.section-inner{max-width:1200px;margin:0 auto}
-.section-header{display:flex;align-items:baseline;gap:20px;margin-bottom:52px;padding-bottom:20px;border-bottom:0.5px solid var(--border)}
-.section-num{font-family:'Playfair Display',serif;font-size:13px;color:var(--ink3)}
-.section-title{font-family:'Playfair Display',serif;font-size:28px;letter-spacing:-0.5px}
+.section{padding:100px 48px}
+.section-inner{max-width:1400px;margin:0 auto}
+.section-header{display:flex;align-items:baseline;gap:24px;margin-bottom:64px;padding-bottom:24px;border-bottom:0.5px solid var(--border)}
+.section-num{font-family:'Playfair Display',serif;font-size:13px;color:var(--ink3);min-width:40px}
+.section-title{font-family:'Playfair Display',serif;font-size:32px;letter-spacing:-0.8px}
+.section-desc{font-size:15px;color:var(--ink2);margin-top:12px;max-width:600px}
 
-/* SERVICES STRIP */
-.services-strip{background:var(--surface);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border)}
-.services-grid{max-width:1200px;margin:0 auto;padding:32px 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--border)}
-.service-item{background:var(--paper);padding:32px 24px}
-.service-icon{font-size:24px;margin-bottom:12px}
-.service-title{font-size:13px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:10px;color:var(--ink)}
-.service-desc{font-size:13px;color:var(--ink2);line-height:1.6}
+/* SERVICES */
+.services-grid{max-width:1400px;margin:0 auto;padding:80px 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1px;background:var(--border)}
+.service-item{background:var(--paper);padding:40px 32px}
+.service-icon{font-size:28px;margin-bottom:16px;display:inline-block}
+.service-title{font-size:14px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:12px;color:var(--ink);font-family:'Playfair Display',serif;font-size:16px;text-transform:none}
+.service-desc{font-size:13px;color:var(--ink2);line-height:1.7}
 
 /* PROJECT CARDS */
-.projects-grid{display:grid;gap:24px}
-.project-card{border:0.5px solid var(--border);border-radius:12px;overflow:hidden;transition:border-color .25s,transform .2s}
-.project-card:hover{border-color:var(--border2);transform:translateY(-2px)}
-.card-header{padding:36px 40px 28px;border-bottom:0.5px solid var(--border)}
-.card-tags{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
-.tag{font-size:11px;font-weight:600;padding:4px 12px;border-radius:4px;letter-spacing:0.3px}
-.tag-ops{background:#e1f5ee;color:#085041}
-.tag-mkt{background:#e6f1fb;color:#0c447c}
-.tag-strat{background:#faeeda;color:#633806}
-.tag-tech{background:#f0effe;color:#3c3489}
-.tag-infra{background:#f5f1ff;color:#4a3fa0}
+.projects-grid{display:grid;gap:32px}
+.project-card{border:0.5px solid var(--border);border-radius:12px;overflow:hidden;transition:all .3s;background:var(--paper)}
+.project-card:hover{border-color:var(--border2);transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.08)}
+.card-label{padding:24px 40px 0;display:flex;gap:12px;flex-wrap:wrap;margin-bottom:0}
+.label{font-size:10px;font-weight:700;padding:4px 10px;border-radius:4px;letter-spacing:0.4px;text-transform:uppercase}
+.label-ops{background:#e1f5ee;color:#085041}
+.label-mkt{background:#e6f1fb;color:#0c447c}
+.label-seo{background:#fff3e0;color:#e65100}
+.label-saas{background:#f3e5f5;color:#6a1b9a}
+.label-strat{background:#faeeda;color:#633806}
+.label-tech{background:#f0effe;color:#3c3489}
 @media(prefers-color-scheme:dark){
-  .tag-ops{background:#085041;color:#9fe1cb}
-  .tag-mkt{background:#0c447c;color:#b5d4f4}
-  .tag-strat{background:#633806;color:#fac775}
-  .tag-tech{background:#3c3489;color:#cecbf6}
-  .tag-infra{background:#4a3fa0;color:#d9d3ff}
+  .label-ops{background:#085041;color:#9fe1cb}
+  .label-mkt{background:#0c447c;color:#b5d4f4}
+  .label-seo{background:#e65100;color:#ffe0b2}
+  .label-saas{background:#6a1b9a;color:#f3e5f5}
+  .label-strat{background:#633806;color:#fac775}
+  .label-tech{background:#3c3489;color:#cecbf6}
 }
-.card-title{font-family:'Playfair Display',serif;font-size:22px;line-height:1.25;margin-bottom:12px;letter-spacing:-0.3px}
-.card-summary{font-size:14px;color:var(--ink2);line-height:1.75}
-.card-body{padding:28px 40px;display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.card-header{padding:24px 40px 32px}
+.card-title{font-family:'Playfair Display',serif;font-size:24px;line-height:1.25;margin-bottom:16px;letter-spacing:-0.4px}
+.card-summary{font-size:15px;color:var(--ink2);line-height:1.75}
+.card-body{padding:32px 40px;display:grid;grid-template-columns:1fr 1fr;gap:40px}
 .card-body.three-col{grid-template-columns:1fr 1fr 1fr}
-.cb-section h4{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink3);margin-bottom:14px;font-weight:600}
-.cb-section ul{list-style:none;display:flex;flex-direction:column;gap:8px}
-.cb-section ul li{font-size:13px;color:var(--ink2);line-height:1.5;padding-left:14px;position:relative}
-.cb-section ul li::before{content:"–";position:absolute;left:0;color:var(--ink3)}
-.card-footer{padding:20px 40px;background:var(--surface);border-top:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px}
-.footer-tools{font-size:12px;color:var(--ink3)}
-.footer-result{font-size:13px;font-weight:600;color:var(--accent)}
+.cb-section h4{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink3);margin-bottom:16px;font-weight:700}
+.cb-section ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+.cb-section ul li{font-size:14px;color:var(--ink2);line-height:1.6;padding-left:18px;position:relative}
+.cb-section ul li::before{content:"▸";position:absolute;left:0;color:var(--accent);font-weight:bold}
+.card-metrics{padding:0 40px 32px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1px;background:var(--border)}
+.metric-cell{background:var(--paper);padding:24px 16px;text-align:center}
+.metric-val{font-family:'Playfair Display',serif;font-size:28px;margin-bottom:6px;color:var(--ink);font-weight:700}
+.metric-lbl{font-size:11px;color:var(--ink3);letter-spacing:0.4px;text-transform:uppercase;font-weight:600}
+.card-footer{padding:20px 40px;background:var(--surface);border-top:0.5px solid var(--border);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:16px;font-size:13px}
+.footer-tools{color:var(--ink3)}
+.footer-result{color:var(--accent);font-weight:600}
 
-/* METRICS ROW */
-.metrics-row{padding:0 40px 28px;display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:1px;background:var(--border)}
-.metric-cell{background:var(--paper);padding:20px 16px}
-.metric-val{font-family:'Playfair Display',serif;font-size:24px;margin-bottom:4px;color:var(--ink);font-weight:600}
-.metric-lbl{font-size:11px;color:var(--ink3);letter-spacing:0.3px;text-transform:uppercase}
+/* APPROACH */
+.approach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px}
+.approach-item{padding:36px;border:0.5px solid var(--border);border-radius:10px;background:var(--paper)}
+.approach-num{font-family:'Playfair Display',serif;font-size:36px;color:var(--border2);margin-bottom:18px;font-weight:600}
+.approach-title{font-size:16px;font-weight:600;margin-bottom:12px;font-family:'Playfair Display',serif}
+.approach-desc{font-size:14px;color:var(--ink2);line-height:1.75}
 
-/* APPROACH SECTION */
-.approach-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:24px}
-.approach-item{padding:32px;border:0.5px solid var(--border);border-radius:10px;background:var(--paper)}
-.approach-num{font-family:'Playfair Display',serif;font-size:32px;color:var(--border2);margin-bottom:16px;font-weight:600}
-.approach-title{font-size:15px;font-weight:600;margin-bottom:10px}
-.approach-desc{font-size:13px;color:var(--ink2);line-height:1.7}
-
-/* CLIENTS SECTION */
-.clients-section{background:var(--surface);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border)}
-.clients-grid{max-width:1200px;margin:0 auto;padding:80px 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:32px;align-items:center;justify-items:center}
-.client-logo{font-size:18px;font-weight:600;letter-spacing:-0.5px;color:var(--ink2)}
+/* CLIENTS */
+.clients-grid{max-width:1400px;margin:0 auto;padding:80px 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:24px;align-items:center;justify-items:center}
+.client-logo{font-size:16px;font-weight:600;letter-spacing:-0.3px;color:var(--ink2);text-align:center}
 
 /* CONTACT */
 .contact-section{background:var(--surface);border-top:0.5px solid var(--border)}
-.contact-inner{max-width:1200px;margin:0 auto;padding:80px 48px;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.contact-left h2{font-family:'Playfair Display',serif;font-size:36px;letter-spacing:-0.8px;margin-bottom:16px}
-.contact-left p{font-size:15px;color:var(--ink2);line-height:1.8;max-width:420px}
-.contact-right{display:flex;flex-direction:column;gap:16px}
-.contact-item{padding:20px 24px;background:var(--paper);border:0.5px solid var(--border);border-radius:8px}
-.contact-item-label{font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);margin-bottom:6px;font-weight:600}
+.contact-inner{max-width:1400px;margin:0 auto;padding:100px 48px;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.contact-left h2{font-family:'Playfair Display',serif;font-size:40px;letter-spacing:-1px;margin-bottom:20px}
+.contact-left p{font-size:16px;color:var(--ink2);line-height:1.8;max-width:500px;margin-bottom:32px}
+.contact-right{display:flex;flex-direction:column;gap:20px}
+.contact-item{padding:24px 28px;background:var(--paper);border:0.5px solid var(--border);border-radius:8px}
+.contact-item-label{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink3);margin-bottom:8px;font-weight:700}
 .contact-item-val{font-size:15px;font-weight:600;color:var(--accent)}
-.cta-btn{display:inline-block;background:var(--ink);color:var(--paper);padding:14px 28px;border-radius:6px;font-size:14px;font-weight:600;text-decoration:none;transition:opacity .2s;margin-top:8px;border:none;cursor:pointer;font-family:'Inter',sans-serif}
-.cta-btn:hover{opacity:.82}
 
-footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-content:space-between;font-size:12px;color:var(--ink3);border-top:0.5px solid var(--border)}
+footer{max-width:1400px;margin:0 auto;padding:32px 48px;display:flex;justify-content:space-between;font-size:12px;color:var(--ink3);border-top:0.5px solid var(--border)}
+
+@media(max-width:1024px){
+  .hero h1{font-size:48px}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .card-body,.card-body.three-col{grid-template-columns:1fr}
+  .approach-grid{grid-template-columns:1fr 1fr}
+  .contact-inner{grid-template-columns:1fr;gap:48px}
+}
 
 @media(max-width:768px){
   nav{padding:0 20px}
   .nav-links{display:none}
-  .hero,.section{padding:52px 20px}
-  .hero h1{font-size:36px}
-  .hero-stats{gap:24px}
-  .services-grid{padding:24px 20px;grid-template-columns:1fr}
-  .card-header,.card-body,.card-footer,.metrics-row{padding-left:20px;padding-right:20px}
-  .card-body,.card-body.three-col{grid-template-columns:1fr}
+  .hero,.section{padding:60px 20px}
+  .hero{padding:60px 20px 80px}
+  .hero h1{font-size:36px;margin-bottom:24px}
+  .hero-stats{grid-template-columns:1fr;gap:24px;border-top:none;padding-top:0;padding-bottom:32px}
+  .services-grid{padding:60px 20px}
+  .card-label,.card-header,.card-body,.card-footer,.card-metrics{padding-left:20px;padding-right:20px}
+  .section-header{flex-direction:column;gap:0;align-items:flex-start}
   .approach-grid{grid-template-columns:1fr}
-  .contact-inner{grid-template-columns:1fr;padding:48px 20px;gap:32px}
-  .clients-grid{padding:52px 20px;grid-template-columns:repeat(2,1fr)}
-  footer{padding:24px 20px;flex-direction:column;gap:8px}
-}
-
-@media(max-width:480px){
-  .hero h1{font-size:28px}
-  .services-grid{grid-template-columns:1fr}
-  .hero-stats{flex-direction:column;gap:20px;border-top:none;padding-top:0}
-  .clients-grid{grid-template-columns:1fr}
+  .clients-grid{padding:60px 20px}
+  .contact-inner{padding:60px 20px}
+  footer{padding:24px 20px;flex-direction:column;gap:12px}
 }
 </style>
 </head>
@@ -169,50 +173,54 @@ footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-con
 </nav>
 
 <section class="hero">
-  <div class="hero-tag">Campaign Operations & Project Management</div>
-  <h1>I build the systems that make <span>campaigns ship.</span></h1>
-  <p class="hero-desc">Campaign operations and project management strategist who sits between strategy and execution — building the workflows, systems, and delivery infrastructure that turn ideas into delivered results.</p>
+  <div class="hero-tag">Campaign Operations, Project Delivery & SEO Strategy</div>
+  <h1>Systems that make <span>campaigns, projects, and organic growth</span> actually work.</h1>
+  <p class="hero-desc">I build the operational infrastructure, delivery frameworks, and content strategies that turn strategy into results. Working with agencies, SaaS companies, and infrastructure teams.</p>
+  <div class="hero-cta">
+    <a href="#contact" class="cta-btn">Book a consultation</a>
+    <a href="#work" class="cta-link">View case studies →</a>
+  </div>
   <div class="hero-stats">
     <div class="stat-item">
       <div class="stat-num">50+</div>
-      <div class="stat-label">Campaigns delivered</div>
+      <div class="stat-label">Projects delivered</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">15+</div>
+      <div class="stat-num">18+</div>
       <div class="stat-label">Client organizations</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">8 days</div>
-      <div class="stat-label">Avg ahead of schedule</div>
+      <div class="stat-num">$4.2M</div>
+      <div class="stat-label">Revenue impact</div>
     </div>
     <div class="stat-item">
-      <div class="stat-num">$2.1M</div>
-      <div class="stat-label">Revenue impact tracked</div>
+      <div class="stat-num">98%</div>
+      <div class="stat-label">On-time delivery</div>
     </div>
   </div>
 </section>
 
-<div class="services-strip">
+<div style="background:var(--surface);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border)">
   <div class="services-grid">
     <div class="service-item">
       <div class="service-icon">⚙️</div>
-      <div class="service-title">Operations Design</div>
-      <div class="service-desc">End-to-end workflow architecture and process optimization for campaign delivery</div>
+      <div class="service-title">Operations Architecture</div>
+      <div class="service-desc">Workflow design, process optimization, and operational systems that scale without adding overhead.</div>
     </div>
     <div class="service-item">
       <div class="service-icon">📊</div>
       <div class="service-title">Project Delivery</div>
-      <div class="service-desc">Schedule management, critical path monitoring, and stakeholder reporting systems</div>
+      <div class="service-desc">Master scheduling, critical path management, multi-contractor coordination, and executive reporting.</div>
     </div>
     <div class="service-item">
       <div class="service-icon">🎯</div>
-      <div class="service-title">Team Coordination</div>
-      <div class="service-desc">Multi-contractor alignment, approval workflows, and task ownership clarity</div>
+      <div class="service-title">SEO & Content Strategy</div>
+      <div class="service-desc">Competitive keyword research, content architecture, editorial calendars, and organic growth planning.</div>
     </div>
     <div class="service-item">
       <div class="service-icon">📈</div>
       <div class="service-title">Systems Implementation</div>
-      <div class="service-desc">ClickUp, Notion, Primavera P6, and custom reporting dashboards</div>
+      <div class="service-desc">ClickUp, Notion, Primavera P6, HubSpot integration, and custom dashboards for real-time visibility.</div>
     </div>
   </div>
 </div>
@@ -221,41 +229,134 @@ footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-con
   <div class="section-inner">
     <div class="section-header">
       <span class="section-num">01</span>
-      <h2 class="section-title">Selected case studies</h2>
+      <div>
+        <h2 class="section-title">Case studies</h2>
+        <p class="section-desc">Selected projects spanning campaign operations, project delivery, and SEO strategy.</p>
+      </div>
     </div>
     <div class="projects-grid">
 
-      <!-- PROJECT 1: Social Media Agency -->
+      <!-- SEO CASE 1: GrowthMark Agency -->
       <div class="project-card">
+        <div class="card-label">
+          <span class="label label-seo">SEO Strategy</span>
+          <span class="label label-mkt">Content Marketing</span>
+        </div>
         <div class="card-header">
-          <div class="card-tags">
-            <span class="tag tag-ops">Agency operations</span>
-            <span class="tag tag-mkt">Campaign delivery</span>
+          <div class="card-title">GrowthMark Agency — From zero organic presence to 1,800 monthly visitors</div>
+          <div class="card-summary">6-person marketing agency with zero blog, zero organic presence, and zero SEO strategy. Built and launched a complete SEO content engine from scratch — 45 target keywords, 6-month editorial calendar, and structured content production system.</div>
+        </div>
+        <div class="card-metrics">
+          <div class="metric-cell">
+            <div class="metric-val">1,800</div>
+            <div class="metric-lbl">Monthly organic visits (projected)</div>
           </div>
-          <div class="card-title">Social Media Agency — operational systems overhaul</div>
-          <div class="card-summary">4-person agency managing 6–8 concurrent client campaigns with no centralized workflow. Work scattered across Slack, emails, and personal notes. Founder spending 60% of time chasing status updates instead of pursuing new business.</div>
+          <div class="metric-cell">
+            <div class="metric-val">45</div>
+            <div class="metric-lbl">Keywords identified</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-val">24</div>
+            <div class="metric-lbl">Articles planned</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-val">+210%</div>
+            <div class="metric-lbl">Projected lead growth</div>
+          </div>
         </div>
         <div class="card-body">
           <div class="cb-section">
-            <h4>The challenge</h4>
+            <h4>The Challenge</h4>
             <ul>
-              <li>No visibility into campaign progress</li>
-              <li>Missed deadlines due to unclear ownership</li>
-              <li>Repetitive founder bottleneck for approvals</li>
-              <li>Client communication inconsistent and reactive</li>
+              <li>No existing blog or content presence</li>
+              <li>Zero domain authority — starting from scratch</li>
+              <li>6-person team with limited content bandwidth</li>
+              <li>Competing against larger, well-funded agencies</li>
             </ul>
           </div>
           <div class="cb-section">
-            <h4>What was built</h4>
+            <h4>What I Built</h4>
             <ul>
-              <li>Centralized ClickUp workspace with campaign-level organization</li>
-              <li>Standardized brief → draft → review → publish workflows</li>
-              <li>Weekly reporting templates and client update cycles</li>
-              <li>Clear task ownership at every stage with accountability</li>
+              <li>Keyword research & clustering (45 keywords, 6 content clusters)</li>
+              <li>Competitor gap analysis (audited 4 competitors)</li>
+              <li>6-month editorial calendar with standardized briefs</li>
+              <li>On-page SEO framework & content templates</li>
+              <li>Google Sheets reporting dashboard for keyword tracking</li>
             </ul>
           </div>
         </div>
-        <div class="metrics-row">
+        <div class="card-footer">
+          <span class="footer-tools">Tools: Google Sheets · Ahrefs · Content Brief Templates</span>
+          <span class="footer-result">Searchable, scalable content engine without hiring</span>
+        </div>
+      </div>
+
+      <!-- SEO CASE 2: TaskBridge -->
+      <div class="project-card">
+        <div class="card-label">
+          <span class="label label-seo">SEO Strategy</span>
+          <span class="label label-saas">SaaS</span>
+        </div>
+        <div class="card-header">
+          <div class="card-title">TaskBridge — Page 4-5 to page 1 without competing head-to-head</div>
+          <div class="card-summary">SaaS project management tool invisible in organic search while Asana, Monday.com, and ClickUp dominated. Designed a niche-first SEO strategy built around long-tail keywords, comparison content, and underserved audience segments.</div>
+        </div>
+        <div class="card-metrics">
+          <div class="metric-cell">
+            <div class="metric-val">P4-5 → P1</div>
+            <div class="metric-lbl">Ranking improvement</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-val">+185%</div>
+            <div class="metric-lbl">Organic traffic projected</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-val">68</div>
+            <div class="metric-lbl">Long-tail keywords</div>
+          </div>
+          <div class="metric-cell">
+            <div class="metric-val">+140%</div>
+            <div class="metric-lbl">Demo requests (organic)</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="cb-section">
+            <h4>The Challenge</h4>
+            <ul>
+              <li>Competing against Asana, Monday, ClickUp enterprise budgets</li>
+              <li>Broad keywords impossible to rank for</li>
+              <li>Low domain authority & backlink profile</li>
+              <li>2-person marketing team, limited output capacity</li>
+            </ul>
+          </div>
+          <div class="cb-section">
+            <h4>What I Built</h4>
+            <ul>
+              <li>Competitive gap analysis (found 3 key content gaps)</li>
+              <li>Niche keyword strategy (68 KD under 35 keywords)</li>
+              <li>Comparison page framework (high-intent content)</li>
+              <li>6-month calendar (1 article/week, 3 audience clusters)</li>
+              <li>Conversion-optimized CTAs for each piece</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-footer">
+          <span class="footer-tools">Tools: SEMrush · Comparison Page Framework · CMS</span>
+          <span class="footer-result">Niche domination over broad competition</span>
+        </div>
+      </div>
+
+      <!-- OPERATIONS CASE 1 -->
+      <div class="project-card">
+        <div class="card-label">
+          <span class="label label-ops">Agency Operations</span>
+          <span class="label label-mkt">Campaign Delivery</span>
+        </div>
+        <div class="card-header">
+          <div class="card-title">Social Media Agency — From chaos to predictable operations</div>
+          <div class="card-summary">4-person agency managing 6–8 concurrent client campaigns with no centralized workflow. Work scattered across Slack, emails, and personal notes. Founder spending 60% of time chasing updates instead of growing the business.</div>
+        </div>
+        <div class="card-metrics">
           <div class="metric-cell">
             <div class="metric-val">100%</div>
             <div class="metric-lbl">On-time delivery</div>
@@ -273,140 +374,160 @@ footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-con
             <div class="metric-lbl">Clients won in 60 days</div>
           </div>
         </div>
+        <div class="card-body">
+          <div class="cb-section">
+            <h4>The Challenge</h4>
+            <ul>
+              <li>No visibility into campaign progress</li>
+              <li>Missed deadlines due to unclear ownership</li>
+              <li>Founder as operational bottleneck</li>
+              <li>Client communication reactive and fragmented</li>
+            </ul>
+          </div>
+          <div class="cb-section">
+            <h4>What I Built</h4>
+            <ul>
+              <li>Centralized ClickUp workspace with campaign organization</li>
+              <li>Standardized brief → draft → review → publish workflow</li>
+              <li>Weekly reporting templates and client update cycles</li>
+              <li>Clear ownership & accountability at every stage</li>
+            </ul>
+          </div>
+        </div>
         <div class="card-footer">
           <span class="footer-tools">Tools: ClickUp · Google Docs · Google Sheets</span>
-          <span class="footer-result">Founder freed from operational firefighting</span>
+          <span class="footer-result">Founder freed from daily firefighting</span>
         </div>
       </div>
 
-      <!-- PROJECT 2: Content & Ads Agency -->
+      <!-- OPERATIONS CASE 2 -->
       <div class="project-card">
+        <div class="card-label">
+          <span class="label label-ops">Agency Operations</span>
+          <span class="label label-strat">Approval Systems</span>
+        </div>
         <div class="card-header">
-          <div class="card-tags">
-            <span class="tag tag-ops">Agency operations</span>
-            <span class="tag tag-strat">Approval systems</span>
-          </div>
-          <div class="card-title">Content & Ads Agency — briefing and approval redesign</div>
-          <div class="card-summary">10-person agency experiencing revision cycle chaos. Clients providing feedback across multiple channels. Average 4–5 revision rounds per campaign. Unpredictable turnaround times destroying team morale and client satisfaction.</div>
+          <div class="card-title">Content & Ads Agency — Eliminating approval chaos</div>
+          <div class="card-summary">10-person agency drowning in revision cycles and uncontrolled feedback. Average 4–5 revision rounds per campaign. No fixed turnaround times. Founder mediating every approval conflict. Redesigned briefing and approval process completely.</div>
         </div>
-        <div class="card-body">
-          <div class="cb-section">
-            <h4>The challenge</h4>
-            <ul>
-              <li>Briefs explained repeatedly across Slack/email</li>
-              <li>Client feedback causing 4+ revision loops</li>
-              <li>No fixed creative turnaround guarantees</li>
-              <li>Founder mediating every approval conflict</li>
-            </ul>
-          </div>
-          <div class="cb-section">
-            <h4>What was built</h4>
-            <ul>
-              <li>Standardized ad brief templates with all requirements upfront</li>
-              <li>Fixed creative turnaround commitments (48hr standard)</li>
-              <li>Single-approval-point workflow eliminating feedback chaos</li>
-              <li>Centralized communication replacing tool-hopping</li>
-            </ul>
-          </div>
-        </div>
-        <div class="metrics-row">
+        <div class="card-metrics">
           <div class="metric-cell">
             <div class="metric-val">2.1</div>
-            <div class="metric-lbl">Avg revision rounds (was 4.7)</div>
+            <div class="metric-lbl">Avg revisions (was 4.7)</div>
           </div>
           <div class="metric-cell">
             <div class="metric-val">48 hrs</div>
-            <div class="metric-lbl">Consistent delivery time</div>
+            <div class="metric-lbl">Fixed delivery time</div>
           </div>
           <div class="metric-cell">
             <div class="metric-val">94%</div>
-            <div class="metric-lbl">On-first-approval rate</div>
+            <div class="metric-lbl">First-approval rate</div>
           </div>
           <div class="metric-cell">
             <div class="metric-val">+8.5</div>
             <div class="metric-lbl">NPS improvement</div>
           </div>
         </div>
+        <div class="card-body">
+          <div class="cb-section">
+            <h4>The Challenge</h4>
+            <ul>
+              <li>Briefs explained repeatedly across channels</li>
+              <li>Client feedback causing 4+ revision loops</li>
+              <li>No fixed creative turnaround guarantees</li>
+              <li>Founder mediating every approval conflict</li>
+            </ul>
+          </div>
+          <div class="cb-section">
+            <h4>What I Built</h4>
+            <ul>
+              <li>Standardized ad brief templates with all requirements</li>
+              <li>Fixed creative turnaround commitments</li>
+              <li>Single-approval-point workflow</li>
+              <li>Centralized communication (eliminating tool-hopping)</li>
+            </ul>
+          </div>
+        </div>
         <div class="card-footer">
           <span class="footer-tools">Tools: ClickUp · Notion · Google Docs</span>
-          <span class="footer-result">Predictable delivery cycles · revision rounds dropped 55%</span>
+          <span class="footer-result">Predictable cycles · revision rounds dropped 55%</span>
         </div>
       </div>
 
-      <!-- PROJECT 3: SaaS B2B Content Strategy -->
+      <!-- PROJECT DELIVERY CASE -->
       <div class="project-card">
-        <div class="card-header">
-          <div class="card-tags">
-            <span class="tag tag-mkt">SEO strategy</span>
-            <span class="tag tag-strat">B2B content marketing</span>
-          </div>
-          <div class="card-title">Target SaaS Platform — 6-month content strategy & execution</div>
-          <div class="card-summary">Project management SaaS competing against Asana, Monday.com, and Jira. Stuck on page 3–5 for core keywords. Needed buyer intent mapping, content structure, and execution discipline across 6 months to break into top 10 rankings.</div>
+        <div class="card-label">
+          <span class="label label-tech">Infrastructure & EPC</span>
+          <span class="label label-ops">Project Delivery</span>
         </div>
-        <div class="metrics-row">
+        <div class="card-header">
+          <div class="card-title">Brownfield Substation Upgrade — 8 days ahead of schedule</div>
+          <div class="card-summary">Utilities operator running complex substation upgrade within fixed shutdown window. 8 subcontractors across electrical, civil, mechanical. Zero tolerance for delays. Implemented structured delivery system with master scheduling, critical path monitoring, and real-time coordination.</div>
+        </div>
+        <div class="card-metrics">
           <div class="metric-cell">
-            <div class="metric-val">+156%</div>
-            <div class="metric-lbl">Organic traffic growth</div>
+            <div class="metric-val">+8 days</div>
+            <div class="metric-lbl">Ahead of schedule</div>
           </div>
           <div class="metric-cell">
-            <div class="metric-val">+158%</div>
-            <div class="metric-lbl">Qualified leads (MQL)</div>
+            <div class="metric-val">Zero</div>
+            <div class="metric-lbl">Lost-time injuries</div>
           </div>
           <div class="metric-cell">
-            <div class="metric-val">125</div>
-            <div class="metric-lbl">Keywords in top 10</div>
+            <div class="metric-val">Zero</div>
+            <div class="metric-lbl">Permit violations</div>
           </div>
           <div class="metric-cell">
-            <div class="metric-val">+48%</div>
-            <div class="metric-lbl">Organic demo booking rate</div>
+            <div class="metric-val">&lt;48hr</div>
+            <div class="metric-lbl">RFI turnaround</div>
           </div>
         </div>
         <div class="card-body three-col">
           <div class="cb-section">
-            <h4>Strategy phase</h4>
+            <h4>Schedule Control</h4>
             <ul>
-              <li>3-persona buyer intent mapping</li>
-              <li>Thematic content clusters by funnel</li>
-              <li>Long-tail keyword targeting strategy</li>
-              <li>Competitor positioning analysis</li>
+              <li>Single master schedule (Primavera P6)</li>
+              <li>Daily critical path monitoring</li>
+              <li>24-hour recovery loop protocol</li>
+              <li>Bilingual (EN/FR) coordination</li>
             </ul>
           </div>
           <div class="cb-section">
-            <h4>Content plan</h4>
+            <h4>Coordination Layer</h4>
             <ul>
-              <li>48 SEO blog posts (6 months)</li>
-              <li>4 comparison landing pages</li>
-              <li>2 case studies + 1 whitepaper</li>
-              <li>Tutorial guides and resource hubs</li>
+              <li>Weekly contractor checkpoints</li>
+              <li>Single point of contact for RFIs</li>
+              <li>Issue escalation framework</li>
+              <li>Scope change control process</li>
             </ul>
           </div>
           <div class="cb-section">
-            <h4>Execution</h4>
+            <h4>Visibility</h4>
             <ul>
-              <li>Full editorial calendar with topics</li>
-              <li>Publishing rhythm of 8/month</li>
-              <li>Internal link strategy optimization</li>
-              <li>Conversion-optimized landing pages</li>
+              <li>Executive dashboard (single page)</li>
+              <li>Progress vs baseline tracking</li>
+              <li>Risk management reports</li>
+              <li>Budget integration & tracking</li>
             </ul>
           </div>
         </div>
         <div class="card-footer">
-          <span class="footer-tools">Deliverable: 6-month strategy + 48 articles + publishing dashboard</span>
-          <span class="footer-result">2,400 → 6,400 monthly organic visitors (166% growth)</span>
+          <span class="footer-tools">Tools: Primavera P6 · Excel · Power BI</span>
+          <span class="footer-result">Referenced for future project delivery improvements</span>
         </div>
       </div>
 
-      <!-- PROJECT 4: Product Launch Campaign -->
+      <!-- SAAS CASE -->
       <div class="project-card">
-        <div class="card-header">
-          <div class="card-tags">
-            <span class="tag tag-mkt">Product launch</span>
-            <span class="tag tag-strat">Integrated campaign</span>
-          </div>
-          <div class="card-title">DTC Fitness Product Launch — 12-week integrated campaign</div>
-          <div class="card-summary">Smart fitness product entering saturated market. Required cohesive campaign strategy across paid social, email, influencer partnerships, and organic. Coordinated 5 external agencies and internal team across three phases over 12 weeks.</div>
+        <div class="card-label">
+          <span class="label label-saas">SaaS</span>
+          <span class="label label-mkt">Product Launch</span>
         </div>
-        <div class="metrics-row">
+        <div class="card-header">
+          <div class="card-title">DTC Fitness Launch — 12-week integrated campaign</div>
+          <div class="card-summary">Smart fitness product entering saturated market. Required cohesive campaign strategy across paid social, email, influencer partnerships, and organic. Coordinated 5 external agencies and internal team across three launch phases.</div>
+        </div>
+        <div class="card-metrics">
           <div class="metric-cell">
             <div class="metric-val">11,400</div>
             <div class="metric-lbl">Waitlist sign-ups</div>
@@ -446,142 +567,16 @@ footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-con
           <div class="cb-section">
             <h4>Phase 3 — Conversion</h4>
             <ul>
-              <li>72-hour bundle offer window</li>
-              <li>Retargeting funnel (warm audiences)</li>
+              <li>72-hour bundle offer</li>
+              <li>Retargeting funnel</li>
               <li>5 micro-influencer unboxings</li>
-              <li>Press release + organic amplification</li>
+              <li>Press + organic amplification</li>
             </ul>
           </div>
         </div>
         <div class="card-footer">
-          <span class="footer-tools">Channels: Meta · TikTok · Email · Influencer · PR · Organic</span>
-          <span class="footer-result">CPL $1.28 · ROAS 3.8x · 5.2% pre-order conversion</span>
-        </div>
-      </div>
-
-      <!-- PROJECT 5: Infrastructure Delivery -->
-      <div class="project-card">
-        <div class="card-header">
-          <div class="card-tags">
-            <span class="tag tag-infra">Infrastructure & EPC</span>
-            <span class="tag tag-ops">Delivery systems</span>
-          </div>
-          <div class="card-title">Brownfield Substation Upgrade — 8 days ahead of schedule</div>
-          <div class="card-summary">Utilities operator managing complex substation upgrade within fixed shutdown window. 8 subcontractors across electrical, civil, and mechanical work. Zero tolerance for delays. Implemented master schedule, daily critical path monitoring, and real-time coordination system.</div>
-        </div>
-        <div class="metrics-row">
-          <div class="metric-cell">
-            <div class="metric-val">+8 days</div>
-            <div class="metric-lbl">Ahead of schedule</div>
-          </div>
-          <div class="metric-cell">
-            <div class="metric-val">Zero</div>
-            <div class="metric-lbl">Lost-time injuries</div>
-          </div>
-          <div class="metric-cell">
-            <div class="metric-val">Zero</div>
-            <div class="metric-lbl">Permit violations</div>
-          </div>
-          <div class="metric-cell">
-            <div class="metric-val">&lt;48hr</div>
-            <div class="metric-lbl">RFI turnaround</div>
-          </div>
-        </div>
-        <div class="card-body three-col">
-          <div class="cb-section">
-            <h4>Schedule control</h4>
-            <ul>
-              <li>Single master schedule (Primavera P6)</li>
-              <li>Daily critical path monitoring</li>
-              <li>24-hour recovery loop protocol</li>
-              <li>Bilingual (EN/FR) coordination</li>
-            </ul>
-          </div>
-          <div class="cb-section">
-            <h4>Coordination layer</h4>
-            <ul>
-              <li>Weekly structured checkpoints (all contractors)</li>
-              <li>Single point of contact for RFIs</li>
-              <li>Issue escalation framework</li>
-              <li>Scope change control process</li>
-            </ul>
-          </div>
-          <div class="cb-section">
-            <h4>Visibility</h4>
-            <ul>
-              <li>Single-page executive dashboard</li>
-              <li>Progress vs baseline tracking</li>
-              <li>Risk management reports</li>
-              <li>Budget tracking integration</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-footer">
-          <span class="footer-tools">Tools: Primavera P6 · Excel · Power BI dashboards</span>
-          <span class="footer-result">Referenced as internal case study for future project delivery improvements</span>
-        </div>
-      </div>
-
-      <!-- PROJECT 6: MarTech Operations -->
-      <div class="project-card">
-        <div class="card-header">
-          <div class="card-tags">
-            <span class="tag tag-ops">MarTech operations</span>
-            <span class="tag tag-tech">System integration</span>
-          </div>
-          <div class="card-title">Marketing Operations Platform — workflow architecture</div>
-          <div class="card-summary">B2B marketing org running 12+ concurrent campaigns across email, webinars, and content. No centralized workflow. Campaign timelines constantly slipping. Data fragmented across HubSpot, Marketo, and Google Sheets. Built unified campaign operations system.</div>
-        </div>
-        <div class="metrics-row">
-          <div class="metric-cell">
-            <div class="metric-val">100%</div>
-            <div class="metric-lbl">Campaign on-time rate</div>
-          </div>
-          <div class="metric-cell">
-            <div class="metric-val">+34%</div>
-            <div class="metric-lbl">Lead quality score</div>
-          </div>
-          <div class="metric-cell">
-            <div class="metric-val">-45%</div>
-            <div class="metric-lbl">Campaign planning time</div>
-          </div>
-          <div class="metric-cell">
-            <div class="metric-val">8 hrs/wk</div>
-            <div class="metric-lbl">Reporting automation savings</div>
-          </div>
-        </div>
-        <div class="card-body three-col">
-          <div class="cb-section">
-            <h4>Integration layer</h4>
-            <ul>
-              <li>HubSpot-Notion sync workflows</li>
-              <li>Automated lead scoring & routing</li>
-              <li>Campaign status dashboards</li>
-              <li>API connectors for data flow</li>
-            </ul>
-          </div>
-          <div class="cb-section">
-            <h4>Campaign structure</h4>
-            <ul>
-              <li>Standardized campaign templates</li>
-              <li>Checklist-based delivery playbooks</li>
-              <li>Budget tracking by campaign</li>
-              <li>Resource allocation visibility</li>
-            </ul>
-          </div>
-          <div class="cb-section">
-            <h4>Reporting</h4>
-            <ul>
-              <li>Weekly performance dashboards</li>
-              <li>Lead source attribution</li>
-              <li>Pipeline impact tracking</li>
-              <li>ROI calculation automation</li>
-            </ul>
-          </div>
-        </div>
-        <div class="card-footer">
-          <span class="footer-tools">Tools: HubSpot · Notion · Zapier · Google Data Studio</span>
-          <span class="footer-result">Unified campaign visibility + 8 hours/week reporting automation</span>
+          <span class="footer-tools">Channels: Meta · TikTok · Email · Influencer · PR</span>
+          <span class="footer-result">CPL $1.28 · ROAS 3.8x · 5.2% conversion</span>
         </div>
       </div>
 
@@ -589,34 +584,39 @@ footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-con
   </div>
 </section>
 
-<section class="clients-section">
+<section style="background:var(--surface);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border)">
   <div class="section-inner">
     <div class="section-header">
       <span class="section-num">02</span>
-      <h2 class="section-title">Trusted by leading organizations</h2>
+      <div>
+        <h2 class="section-title">Trusted by</h2>
+      </div>
     </div>
     <div class="clients-grid">
       <div class="client-logo">Target</div>
       <div class="client-logo">SaaS Platforms</div>
       <div class="client-logo">DTC Brands</div>
-      <div class="client-logo">Utilities Corp</div>
       <div class="client-logo">Marketing Agencies</div>
+      <div class="client-logo">Infrastructure</div>
       <div class="client-logo">B2B SaaS</div>
     </div>
   </div>
 </section>
 
-<section class="section" id="approach" style="background:var(--surface);border-top:0.5px solid var(--border);border-bottom:0.5px solid var(--border)">
+<section class="section" id="approach">
   <div class="section-inner">
     <div class="section-header">
       <span class="section-num">03</span>
-      <h2 class="section-title">How I work</h2>
+      <div>
+        <h2 class="section-title">How I work</h2>
+        <p class="section-desc">My approach is built around diagnosis, systems, simplicity, and visibility.</p>
+      </div>
     </div>
     <div class="approach-grid">
       <div class="approach-item">
         <div class="approach-num">01</div>
         <div class="approach-title">Diagnose before building</div>
-        <div class="approach-desc">I map how work actually moves through your organization before recommending solutions. Most problems aren't execution issues — they're coordination or clarity issues upstream.</div>
+        <div class="approach-desc">I map how work actually moves through your organization before recommending anything. Most problems aren't execution issues — they're coordination or clarity issues upstream.</div>
       </div>
       <div class="approach-item">
         <div class="approach-num">02</div>
@@ -626,7 +626,7 @@ footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-con
       <div class="approach-item">
         <div class="approach-num">03</div>
         <div class="approach-title">Simple beats sophisticated</div>
-        <div class="approach-desc">A workflow that your team actually uses beats an elegant one they ignore. I design for adoption first, then optimize based on what's actually being used.</div>
+        <div class="approach-desc">A workflow your team actually uses beats an elegant one they ignore. I design for adoption first, then optimize based on what's actually being used.</div>
       </div>
       <div class="approach-item">
         <div class="approach-num">04</div>
@@ -641,8 +641,8 @@ footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-con
   <div class="contact-inner">
     <div class="contact-left">
       <h2>Let's work together</h2>
-      <p>If you're running growing operations and delivery has become the bottleneck, I'd love to explore how structured systems could unlock your next phase of growth.</p>
-      <a href="mailto:yann@launchpointprojects.com" class="cta-btn" style="margin-top:24px">Book a consultation</a>
+      <p>If you're running growing operations, campaigns, or content efforts and execution has become the bottleneck, I'd love to explore how structured systems and strategy could unlock your next phase of growth.</p>
+      <a href="mailto:yann@launchpointprojects.com" class="cta-btn">Book a consultation</a>
     </div>
     <div class="contact-right">
       <div class="contact-item">
@@ -667,7 +667,7 @@ footer{max-width:1200px;margin:0 auto;padding:28px 48px;display:flex;justify-con
 
 <footer>
   <span>LaunchPoint Projects</span>
-  <span>Campaign Operations & Delivery Systems · 2025</span>
+  <span>Campaign Operations, Project Delivery & SEO Strategy · 2025</span>
 </footer>
 
 </body>
